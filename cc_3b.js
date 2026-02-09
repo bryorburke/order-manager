@@ -9,7 +9,7 @@ let inventory = [
 console.log("Initial Inventory Summary")
 for (let i = 0; i < inventory.length; i++) {
     let item = inventory[i];
-    console.log(item.sku + " | " + item.name + " | $" + item.price + " | Stock: " + item.stock);
+    console.log(item.sku + " | " + item.name + " | $" + item.price.toFixed(2) + " | Stock: " + item.stock);
 }
 
 // Add new product
